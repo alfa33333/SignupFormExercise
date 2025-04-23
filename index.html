@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/styles.css">
     <title>Signup Form Exercise</title>
 </head>
+
 <body>
-    <h1>Welcome to the Signup Form Exercise</h1>
+    <div style="font-size: 0;">
+        <div class="sidebar">
+            <img src="/src/img/bilal-o-Lt0lb7_PQOg-unsplash.jpg" alt="background image">
+            <div class="overlay">
+                <img id="logo" src="/src/img/odin-lined.png" alt="logo">
+                <p>ODIN</p>
+            </div>
+            <p id="acknowledgement">Photo by <a
+                    href="https://unsplash.com/@lightcircle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bilal
+                    O.</a> on <a
+                    href="https://unsplash.com/photos/white-and-brown-stones-on-brown-sand-Lt0lb7_PQOg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="main-text">
+                <h2>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. </h2> 
+                <h2>Sign up <em>now</em>to get started</h2>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <div class="form-fields">
+                        <h3>Let's do this</h3>
+                        <fieldset>
+                            <div>
+                                <label for="name">*First Name</label>
+                                <input id="name" type="text" name="name" placeholder="Enter your first name" required>
+                            </div>
+                            <div>
+                                <label for="last_name">*Last Name</label>
+                                <input id="last_name" type="text" name="last_name" placeholder="Enter your last name" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                                <label for="email">*Email</label>
+                                <input id="email" type="email" name="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" type="tel" name="phone">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                                <label for="password">*Password</label>
+                                <input id="password" type="password" name="password" required>
+                            </div>
+                            <div>
+                                <label for="confirm_password">*Confirm Password</label>
+                                <input id="confirm_password" type="password" name="confirm_password" required>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

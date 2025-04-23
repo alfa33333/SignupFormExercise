@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/src/font/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    max-height: 100%;
+}
+ 
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue; 
+}
+
+.sidebar {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    width: 35%; /* Adjust as needed */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;;
+}
+
+#logo {
+    height: 6em;
+    margin: auto;
+    vertical-align: middle;
+} 
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+    height: fit-content;
+    padding: 1em;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+
+.overlay p {
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    font-size: 4.5em;
+    vertical-align: middle;
+    font-family: 'CustomFont', sans-serif; /* Use the custom font */
+}
+
+#acknowledgement {
+    color: white;
+    position: absolute;
+    width: fit-content;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+
+}
+
+#acknowledgement a {
+    color: white;
+}
+
+.content {
+    font-size: 14px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;  
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    padding-left: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-text {
+    width: 70%;
+    padding-top: 8em;
+    margin-bottom: 2em;
+    padding-left: 30px;
+}
+
+.form-container {
+    padding-left: 30px;
+}
+
+.form-fields {
+    background-color: white;
+    margin-left: -30px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+input, label {
+    display: block ;
+}
+input {
+    min-width: 200px;
+    width: 100%;
+    height: 1.8em;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3B82F6; /* Change to your desired color */
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* Optional shadow effect */
+}
+
+
+
+label {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+    gap: 10%;
+}
+
+.form-container button {
+    background-color: rgb(139, 101, 152);
+    color: whitesmoke;
+    border: none;
+    margin: 10px;
+    margin-left: 0;
+    padding: 12px 40px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.4em;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container button:hover {
+    background-color: rgb(139, 101, 152, 0.8);
+    cursor: pointer;
+}
+
+.form-container p {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+}
+.form-container a {
+    color: rgb(139, 101, 152);
+    text-decoration: none;
+    font-weight: bold
+}
